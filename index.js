@@ -1,1 +1,7 @@
-console.log('from index.js')
+const ORDERCAKE="ORDERCAKE";
+function ORDERCAKE (){
+return {
+  tyepe:ORDERCAKE,
+  quanitiy:1
+}
+}
