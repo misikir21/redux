@@ -15,7 +15,7 @@ const initalState={
 
 const reducer= (state=initalState,action)=>{
     switch(action.type){
-        case ORDERCAKE:{
+        case ORDERCAKE:
             return{
                 ...initalState,
                 numofcakes:state.numofcakes -1,
