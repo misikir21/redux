@@ -12,6 +12,12 @@ function orderCake() {
   };
 }
 
+function restore_cake(qty){
+    return{
+        type:restore_cake,
+        quantity:qty
+    }
+}
 
 // Reducer
 const initialState = {
