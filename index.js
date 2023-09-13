@@ -29,7 +29,10 @@ const reducer= (state=initalState,action)=>{
     const store=creatStore(reducer);
   
     console.log('initalState',store.getState()); 
-    store.subscribe(()=>console.log('updatee state',store.getState))
+    const unsub=  store.subscribe(()=>console.log('updatee state',store.getState))
     store.dispatch(ORDERCAKE())
     store.dispatch(ORDERCAKE())
     store.dispatch(ORDERCAKE())
+
+unsub()
+    
