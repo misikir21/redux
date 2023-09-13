@@ -3,6 +3,7 @@ const createStore = redux.createStore;
 
 // Action
 const ORDER_CAKE = 'ORDER_CAKE';
+const RSTORE_CAKE='RESTORE_CAKE'
 
 function orderCake() {
   return {
@@ -10,6 +11,7 @@ function orderCake() {
     quantity: 1,
   };
 }
+
 
 // Reducer
 const initialState = {
