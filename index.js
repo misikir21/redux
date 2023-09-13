@@ -31,6 +31,11 @@ const reducer = (state = initialState, action) => {
         ...state,
         numOfCakes: state.numOfCakes - action.quantity,
       };
+      case restore_cake:
+        return {
+            ...state,
+            numOfCakes:state.numOfCakes + action.quantity}
+
     default:
       return state;
   }
@@ -44,5 +49,6 @@ const unsubscribe = store.subscribe(() => console.log('updated state', store.get
 store.dispatch(orderCake());
 store.dispatch(orderCake());
 store.dispatch(orderCake());
+store.dispatch(restore_cake(4))
 
 unsubscribe();
