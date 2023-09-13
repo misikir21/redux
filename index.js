@@ -1,4 +1,5 @@
 ///action
+const redux=require('redux')
 const ORDERCAKE="ORDERCAKE";
 function ORDERCAKE (){
 return {
@@ -16,10 +17,10 @@ const reducer= (state=initalState,action)=>{
     switch(action.type){
         case ORDERCAKE:{
             return{
+                ...initalState,
                 numofcakes:state.numofcakes -1,
             }
             default:
                 return state
         }
     }
-    
