@@ -30,5 +30,6 @@ const reducer= (state=initalState,action)=>{
   
     console.log('initalState',store.getState()); 
     store.subscribe(()=>console.log('updatee state',store.getState))
-    
-     
+    store.dispatch(ORDERCAKE())
+    store.dispatch(ORDERCAKE())
+    store.dispatch(ORDERCAKE())
