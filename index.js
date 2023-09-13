@@ -1,6 +1,6 @@
 ///action
 const redux=require('redux')
-const creatStore=redux.creatStore;
+const createstore=redux.configureStore;
 const ORDERCAKE="ORDERCAKE";
 function ORDERCAKE (){
 return {
@@ -26,7 +26,7 @@ const reducer= (state=initalState,action)=>{
         }
     }
  
-    const store=creatStore(reducer);
+    const store=configureStore(reducer);
   
     console.log('initalState',store.getState()); 
     const unsub=  store.subscribe(()=>console.log('updatee state',store.getState))
