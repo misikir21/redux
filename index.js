@@ -27,3 +27,6 @@ const reducer= (state=initalState,action)=>{
     }
  
     const store=creatStore(reducer);
+  
+    console.log('initalState',store.getState())
+     
