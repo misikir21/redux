@@ -1,5 +1,6 @@
 ///action
 const redux=require('redux')
+const creatStore=redux.creatStore;
 const ORDERCAKE="ORDERCAKE";
 function ORDERCAKE (){
 return {
@@ -24,3 +25,5 @@ const reducer= (state=initalState,action)=>{
                 return state
         }
     }
+ 
+    const store=creatStore(reducer);
